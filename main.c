@@ -53,12 +53,12 @@ void consume(int id){
 
 void produce(int id){
     
-    int j = 0;
+    int i = 0;
     while(1) {
-        if (j == limit) {
-            j = 0;
+        if (i == limit) {
+            i = 0;
         }
-        x = (2 * j) + 1;
+        x = (2 * i) + 1;
         
         pthread_mutex_lock(&mutex);
         buffer[pos_ins] = x;
@@ -67,7 +67,7 @@ void produce(int id){
         }
         pos_ins ++;
         pthread_mutex_unlock(&mutex);
-        j++;
+        i++;
         sleep(1);
     }
 }
