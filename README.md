@@ -8,35 +8,6 @@
 
 > Tem 3 funções essenciais pedidas nessa tarefa, o make que compila o código e gera o binário, o make run pra compilar o código e o make clear para apagar o binário gerado.
 
-## Declaração das variaveis globais e do mutex
-
-```c 
-void *soma (void *arg);
-
-int total = 0;
-int linha;
-int tam;
-int matriz[1000][1000];
-pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER; // inicializador padrao
-```
-
-## Matriz
-
-```c
-scanf("%d ", &tam);
-  
-// declaracao de variaveis
-pthread_t threads[tam];
-int i = 0;
-
-// criacao da matriz
-for(i = 0; i < tam; i++){
-    for(int j = 0; j < tam; j++){
-	scanf(" %d", &matriz[i][j]);
-    }
-}
-```
-
 ## Thread
 
 ```c
