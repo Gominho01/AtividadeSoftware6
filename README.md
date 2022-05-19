@@ -12,7 +12,7 @@
 
 ```c
   // criando as threads
-	  for (int i = 0; i <= prod_quant; i++){
+    for (int i = 0; i <= prod_quant; i++){
         pthread_create(&prod[i], NULL, produce, i);
     }
     
